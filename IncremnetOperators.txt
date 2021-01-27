@@ -1,0 +1,13 @@
+package AssignmentDayOne;
+
+public class IncrementOperators {
+    public static void main(String[] args) {
+        int preIncrement = 0;
+        int postIncrement = 0;
+
+        for(byte i = 0; i < 6; i++){
+            System.out.println("PreIncrement " + preIncrement++ + "\n" + "PostIncrement " + ++postIncrement);
+        }
+    }
+}
+

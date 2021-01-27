@@ -1,0 +1,23 @@
+package AssignmentDayOne;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        int num = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number to find");
+        num = sc.nextInt();
+        int temp = num/2;
+      while(temp > 1){
+            if(num % temp == 0){
+                System.out.println("Not a prime");
+                break;
+            } else{
+                temp--;
+            }
+       }
+    }
+}
+
+

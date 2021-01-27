@@ -1,0 +1,43 @@
+package AssignmentDayOne;
+
+import java.util.Scanner;
+
+public class ControlStatements {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 4;
+
+        if(a > b)
+            System.out.println("a is bigger");
+
+        System.out.println("For loop starts");
+        for (byte i = 1; i < 6; i++)
+            System.out.println(i);
+
+        System.out.println("While loops go brr!!!");
+        while (a < 10) {
+            System.out.println(a++);
+        }
+
+        System.out.println("DO-WHILE is here");
+        do{
+            System.out.println(a++);
+        }while(a<7);
+
+        int c = 0;
+        System.out.println("Enter a case for switch (1 -3)");
+        Scanner sc = new Scanner(System.in);
+        c = sc.nextInt();
+        switch(c){
+            case 1:
+                System.out.println("I see ONE here!!!");
+                break;
+            case 2:
+                System.out.println("I see you say TWOO!!!");
+                break;
+            case 3:
+                System.out.println("Why THREE?");
+                break;
+        }
+    }
+}
