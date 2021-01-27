@@ -1,0 +1,21 @@
+package AssignmentDayOne;
+
+import java.util.Scanner;
+
+public class SumOfDigit {
+    public static void main(String[] args) {
+        int num = 0;
+        System.out.println("Enter a number ");
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+
+        int value, res = 0;
+        while(num > 0) {
+            value = num % 10;
+            res = res + value;
+            num = num / 10;
+        }
+        System.out.println(res );
+    }
+}
+

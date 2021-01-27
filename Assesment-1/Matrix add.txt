@@ -1,0 +1,43 @@
+package AssignmentDayOne;
+
+public class MatrixOperations {
+    public static void main(String[] args) {
+        int [] [] matrix1 = { {1, 2}, {3, 4}};
+        int [] [] matrix2 = { {5, 6}, {7, 8}};
+
+        //addition
+        for(int i = 0; i < matrix1.length; i++){
+            for(int j = 0; j < matrix1[i].length; j++){
+                matrix1[i][j] += matrix2[i][j];
+            }
+        }
+
+        System.out.print("[");
+        for(int i = 0; i < matrix1.length; i++){
+            for(int j = 0; j < matrix1[i].length; j++){
+                System.out.print("\t" + matrix1[i][j] + "\t");
+            }
+        }
+        System.out.print("]");
+        //multiply
+        for (int i = 0; i < matrix1.length; i++){
+            for(int j = 0; j < matrix1[i].length; j++){
+                matrix1[i][j] = (matrix1[i][j] * matrix2[i][j]) + matrix1[i ][j + 1] + matrix2[i + 1][ j ];
+            }
+        }
+
+        System.out.print("[");
+        for(int i = 0; i < matrix1.length; i++){
+            for(int j = 0; j < matrix1[i].length; j++){
+                System.out.print("\t" + matrix1[i][j] + "\t");
+            }
+        }
+        System.out.print("]");
+
+        for(int i = 0; i < matrix1.length; i++){
+            for(int j = 0; j < matrix1[i].length; j++){
+                System.out.println(i + " "+ j );
+            }
+        }
+    }
+}
